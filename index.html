@@ -26,14 +26,14 @@
 <main>
   <a class="lang" href="zh-hant/" hreflang="zh-Hant">繁體中文</a>
   <h1>What2Wear Privacy Policy</h1>
-  <p class="meta">Last updated 14 November 2026</p>
+  <p class="meta">Last updated 26 November 2026</p>
 
   <p>This policy explains what the What2Wear app for Android does with your information: the weather it fetches, what it keeps on your phone, its ads, and buying Plus.</p>
 
   <div class="summary">
     <ul>
-      <li>There's no account to make. What2Wear's only server is a small relay that passes weather requests on to Open-Meteo; it keeps no profile of you.</li>
-      <li>Your location is used to get the weather, from Open-Meteo, and to name the place you're in, through your phone's own place lookup from Google.</li>
+      <li>There's no account to make. What2Wear's only server is a small relay that passes weather and air-quality requests on to Open-Meteo; it keeps no profile of you.</li>
+      <li>Your location is used to get the weather and air quality, from Open-Meteo, and to name the place you're in, through your phone's own place lookup from Google.</li>
       <li>Free shows ads from Google AdMob. Plus has none and makes no ad requests.</li>
       <li>We don't sell your information, and the app has no analytics or crash reporting.</li>
     </ul>
@@ -42,7 +42,7 @@
   <section>
     <h2>Your location and the weather</h2>
     <p>If you allow it, What2Wear uses your phone's approximate location (not its precise GPS position) to show the weather where you are. You can turn this off at any time with “Use my location” in Settings, and use cities you choose instead.</p>
-    <p>To get the weather, the app sends the coordinates of the place you're looking at, or of a Trip's destination, to <a href="https://open-meteo.com/">Open-Meteo</a>, a weather service, through our relay (below). When you search for a place and your phone's own place lookup (below) finds nothing, the text you type is sent to Open-Meteo's place search instead. Open-Meteo's own <a href="https://open-meteo.com/en/terms">terms and privacy information</a> apply to those requests. The Home Screen Widget refreshes its weather in the background the same way, and so do the notifications you turn on: each is prepared on your phone and handed to Android to show.</p>
+    <p>To get the weather, the app sends the coordinates of the place you're looking at, or of a Trip's destination, to <a href="https://open-meteo.com/">Open-Meteo</a>, a weather service, through our relay (below). For the place you're looking at, the app also asks Open-Meteo for its air quality, with the same coordinates and through the same relay. That air quality comes from the European Union's <a href="https://atmosphere.copernicus.eu/">Copernicus Atmosphere Monitoring Service</a>, which receives nothing from the app. When you search for a place and your phone's own place lookup (below) finds nothing, the text you type is sent to Open-Meteo's place search instead. Open-Meteo's own <a href="https://open-meteo.com/en/terms">terms and privacy information</a> apply to those requests. The Home Screen Widget refreshes its weather in the background the same way, and so do the notifications you turn on: each is prepared on your phone and handed to Android to show.</p>
     <p>Requests to Open-Meteo pass through a small relay we run on <a href="https://supabase.com/">Supabase</a>, which adds our Open-Meteo account key and passes them on. The relay receives what the app sends (the coordinates or the text you searched for, and the app's language) and, as with any request over the internet, your phone's IP address. It keeps:</p>
     <ul>
       <li>each answer from Open-Meteo, filed only under the request it answers (the coordinates or search text), so that people asking about the same place in the next 10 minutes share it; it's deleted within an hour</li>
@@ -58,7 +58,7 @@
     <p>These are kept only on your phone, never sent to us:</p>
     <ul>
       <li>your settings, such as units and how warm or cold you usually feel</li>
-      <li>your Saved Places and the most recent weather for them</li>
+      <li>your Saved Places and the most recent weather and air quality for them</li>
       <li>the last name found for the place you're in, shown for up to 3 hours</li>
       <li>your Trips, their packing lists and the weather they were made from</li>
       <li>whether you own Plus, so it still works offline</li>
